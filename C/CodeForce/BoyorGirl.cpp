@@ -14,4 +14,5 @@ int main(){
     else {
        cout<<"IGNORE HIM!"<<endl;
     }
+    return 0;
 }
