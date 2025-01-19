@@ -1,0 +1,1 @@
+C program to count Array elements by using sizeof() operator
