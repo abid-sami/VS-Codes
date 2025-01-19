@@ -4,7 +4,7 @@
 using namespace std;
  
 struct student{
-    char name[50];
+    string name;
     int roll;
     float gpa;
 };
@@ -16,6 +16,7 @@ int main(){
     struct student st[n];
     for(i=0; i<n; i++){
         cout<<"Enter Name: ";
+        getchar();
         getline(cin, st[i].name);
         cout<<"Enter Roll: ";
         cin>>st[i].roll;
