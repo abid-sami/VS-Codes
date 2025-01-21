@@ -2,11 +2,13 @@
 using namespace std;
 
 int main() {
-	int t, x, n;
+	int t, m, n;
     cin>>t;
     for(int i=0; i<t; i++){
-        cin>>n>>x;
-        cout<<n-x<<endl;
+        cin>>n>>m;
+        if(n>=m){
+            cout<<m-n<<endl;
+        }
     }
 
 }
