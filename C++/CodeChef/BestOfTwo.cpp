@@ -6,8 +6,12 @@ int main() {
     cin>>t;
     for(int i=0; i<t; i++){
         cin>>x>>y;
-
-        cout<<x-y<<endl;
+        if(x>=y){
+            cout<<x<<endl;
+        }
+        else if(y>=x){
+            cout<<y<<endl;
+        }
  
     }
 
