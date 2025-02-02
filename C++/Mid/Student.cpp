@@ -1,4 +1,4 @@
-//Store Student Details
+//Structure - Store Student Details
 #include<iostream>
 #include<string.h>
 using namespace std;

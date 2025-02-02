@@ -1,4 +1,4 @@
-//Store & Print student ID, Name, 3 Subjects Marks
+//Structure - Store & Print student ID, Name, 3 Subjects Marks
 #include<iostream>
 using namespace std;
 struct student{

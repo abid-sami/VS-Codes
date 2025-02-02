@@ -1,4 +1,4 @@
-//Input using class
+//Class - Input & Print
 #include<iostream>
 using namespace std;
 class student{
