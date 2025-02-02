@@ -16,5 +16,6 @@ int main() {
             cout<<"Tester"<<endl;
         }
     }
+    return 0;
 
 }
