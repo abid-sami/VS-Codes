@@ -1,22 +1,14 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
-class student{
-    private:
-    int id;
-    string name;
-    float cgpa;
-    public:
-    void valu(){
-        cin>>id>>name>>cgpa;
-    }
-    void displa(){
-        cout<<"Id "<<id<<endl;
-        cout<<"Name "<<name<<endl;
-        cout<<"Cgpa "<<cgpa<<endl;
-    }
-};
+
 int main(){
-    student st1;
-    st1.valu();
-    st1.displa();
+    int t,x,y;
+    cin>>t;
+    while(t--){
+        cin>>x>>y;
+        if(x,y)
+        cout<<y-x<<endl;
+        else
+        cout<<"0"<<endl;
+    }
 }
