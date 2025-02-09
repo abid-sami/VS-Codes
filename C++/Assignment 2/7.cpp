@@ -2,25 +2,39 @@
 
 #include<iostream>
 using namespace std;
-class Person{
+class Employee{
     string name;
-    int id;
-    float salary;
+    int id, rating;
+    float salary,s;
 public:
     void input(){
-    cin>>name>>id>>salary;
+    cin>>name>>id>>salary>>rating;
     }
     void display(){
         cout<<"Name: "<<name<<endl;
-        cout<<"Age: "<<age<<endl;
-        cout<<"Country: "<<country<<endl;
+        cout<<"ID: "<<id<<endl;
+        if(rating==5){
+            s=salary*0.5;
+        }
+        else if(rating==4){
+            s=salary*0.4;
+        }
+        else if(rating==3){
+            s=salary*0.3;
+        }
+        else if(rating==2){
+            s=salary*0.2;
+        }
+        else if(rating==1){
+            s=salary*0.1;
+        }
+        cout<<"Salary: "<<salary+s<<endl;
     }
 
 };
-int main()
-{
-    Person p;
-    p.input();
-    p.display();
 
+int main(){
+    Employee e;
+    e.input();
+    e.display();
 }
