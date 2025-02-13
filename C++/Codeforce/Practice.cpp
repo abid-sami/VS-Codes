@@ -1,16 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-    int a, b, count = 0;
-    cin >> a >> b;
-
-    while (a <= b) {  // Keep looping until a > b
-        a *= 3;  // Multiply a by 3
-        b *= 2;  // Multiply b by 2
-        count++; // Increase the counter
+int main()
+{
+    char a1[99999];
+    cin >> a1;
+    for (int i = 0; a1[i]!= '\0'; i++)
+    {
+        if (a1[i] >= 'A' && a1[i] <= 'Z')
+        {
+            a1[i] += 32;
+        }
     }
-
-    cout << count << endl;
-    return 0;
+    cout << a1 << endl;
 }
