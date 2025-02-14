@@ -1,13 +1,13 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
-    string s;
-    cin>>s;
-    for(int i=0; i<s.length(); i++){
-        if(s>='a' && s<='z'){
-            s=+32;
+int main()
+{
+    char a1[10000];
+    cin >> a1;
+    if (a1[0] >= 'a' && a1[0] <= 'z')
+    {
+            a1[0] -= 32;
         }
-    }
-    cout<<s<<endl;
+    cout << a1 << endl;
 }
