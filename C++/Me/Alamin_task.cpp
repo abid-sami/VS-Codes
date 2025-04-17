@@ -83,11 +83,9 @@ int main(){
     
         Student s1;
         s1.student_call();
-        //s1.display_student();
         
         Teacher t1;
         t1.teacher_call();
-        //t1.display_teacher();
     
     }
  
