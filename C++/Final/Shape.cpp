@@ -1,4 +1,4 @@
-//Always try to do it in Private & it can be questioned as "Just use Constructor, No Function"
+//*** Always try to do it in Private & it can be questioned as "Just use Constructor, No Function"
 
 #include <iostream>
 #define PI 3.1416
