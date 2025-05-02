@@ -3,18 +3,20 @@ using namespace std;
 
 int main(){
     int t, a, b, c, d;
-    int count;
     cin>>t;
     while(t--){
-        if(a>b){
+        cin>>a>>b>>c>>d;
+        int count=0;
+        if(a<b){
             count++;
         }
-        else if(a>c){
+        if(a<c){
             count++;
         }
-        else if(a>d){
+        if(a<d){
             count++;
         }
+        cout<<count<<endl;
     }
-    cout<<count<<endl;
+    
 }
