@@ -3,10 +3,10 @@ using namespace std;
 
 int main(){
     int t;
-    int acount=0;
-    int bcount=0;
     cin>>t;
     while(t--){
+        int acount=0;
+        int bcount=0;
         string s;
         cin>>s;
         for(int i=0; i<s.length(); i++){
