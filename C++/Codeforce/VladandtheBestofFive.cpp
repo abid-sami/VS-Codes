@@ -23,5 +23,6 @@ int main(){
         else{
             cout<<"B"<<endl;
         }
+        
     }
 }
