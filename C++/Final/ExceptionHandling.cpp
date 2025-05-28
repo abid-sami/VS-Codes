@@ -14,7 +14,7 @@ int main(){
         cout<<"Remainder "<<rem<<endl;
     }
     catch(int e){
-        cout<<"Can't be devided by "<<e<<endl;
+        cout<<"Can't be divided by "<<e<<endl;
     }
     cout<<"Hello World"<<endl;
 }

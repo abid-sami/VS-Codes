@@ -1,28 +1,23 @@
 #include<iostream>
 using namespace std;
 
-class student{
-    int id;
-    static int count;
-public:
-    void input(){
-        cin>>id;
-        count+=1;
+int remainder(int a, int b){
+    if(b!=0){
+        return a%b;
     }
-    void display(){
-        cout<<"ID: "<<id<<endl;
+    else{
+        throw 0;
     }
-    static void scount(){
-        cout<<"Total Student: "<<count<<endl;
-    }
-};
-int student::count;
+}
 
 int main(){
-    student s1, s2;
-    s1.input();
-    s2.input();
-    s1.display();
-    s2.display();
-    student::scount();
+    int a,b,rem;
+    cin>>a>>b;
+    try{
+        rem=remainder(a,b);
+        cout<<"Remainder: "<<rem<<endl;
+    }
+    catch(int c){
+        cout<<"Can't be divided by "<<c<<endl;
+    }
 }
