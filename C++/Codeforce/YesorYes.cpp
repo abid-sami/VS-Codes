@@ -4,19 +4,24 @@ int main()
 {
     int x;
     cin >> x;
-    string s;
-    while (x--)
-    {
+    while (x--){
+        string s;
+        int count = 0;
         cin >> s;
-        if (s == "YES" || s == "yes" || s == "Yes" || s == "YeS" || s == "yES" || s == "yEs")
-        {
-            cout << "YES" << endl;
-
+        if(s[0]=='Y' || s[0]=='y'){
+            count++;
         }
-        else
-        {
+        if(s[1]=='E' || s[1]=='e'){
+            count++;
+            }
+        if(s[2]=='S' || s[2]=='s'){
+            count++;
+        }
+        if(count == 3){
+            cout << "YES" << endl;
+        }
+        else{
             cout << "NO" << endl;
-
         }
     }
 }

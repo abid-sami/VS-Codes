@@ -3928,7 +3928,7 @@ Hi, I am MD Ragib Hasan Abid Sami, a Computer Science and Engineering student at
 <div class='sora-special-box wow slideInUp' id='section-2'>
 <div class='special-wrap row'>
 <div class='special-title wow fadeInUp animated' style='visibility: visible;'>
-  <h4>Skilss &amp; Info</h4>
+  <h4>Skills &amp; Info</h4>
   </div>
 <div style='clear: both;'/>
 <div class='skills'>
@@ -3942,8 +3942,12 @@ Hi, I am MD Ragib Hasan Abid Sami, a Computer Science and Engineering student at
     <dd class='skill-percent jquery' data-percent='90'/>
     <dt>SEO</dt>
     <dd class='skill-percent scss' data-percent='90'/>
- <dt>XML</dt>
-    <dd class='skill-percent xml' data-percent='40'/>
+ <dt>C, C++</dt>
+    <dd class='skill-percent xml' data-percent='70'/>
+    <dt>Java</dt>
+    <dd class='skill-percent javascript' data-percent='00'/>
+    <dt>PHP</dt>
+    <dd class='skill-percent php' data-percent='30'/>
   </dl>
    <!-- #skill -->
 </div>
@@ -4073,8 +4077,10 @@ Hi, I am MD Ragib Hasan Abid Sami, a Computer Science and Engineering student at
 <i aria-hidden='true' class='fa fa-cutlery'/>
 </span>
 <span class='special-content'>
-  <h6 class='special-heading'>Web Application</h6>
-<p class='special-text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s. </p></span>
+  <h6 class='special-heading'>Support</h6>
+<p class='special-text'>We provide 24/7 support to keep your website running smoothly and securely. From updates to troubleshooting, we handle everything anytime you need.
+
+ </p></span>
   </div>
 </div>
 <!-- Third Ends -->
@@ -4085,22 +4091,22 @@ Hi, I am MD Ragib Hasan Abid Sami, a Computer Science and Engineering student at
 <div class='row counter-box-wrap'>
 <div class='counter-box-item'>
 <i class='color lnr lnr-code'/>
-<h1 class='counter-sora'>3000</h1>
+<h1 class='counter-sora'>50</h1>
 <div class='counter-sora-text'>Projects Completed</div>
 </div>
 <div class='counter-box-item'>
 <i class='color lnr lnr-coffee-cup'/>
-<h1 class='counter-sora'>50</h1>
+<h1 class='counter-sora'>20</h1>
 <div class='counter-sora-text'>Happy Customers</div>
 </div>
 <div class='counter-box-item'>
 <i class='color lnr lnr-book'/>
-<h1 class='counter-sora'>324</h1>
-<div class='counter-sora-text'>Cups Of Coffee</div>
+<h1 class='counter-sora'>6</h1>
+<div class='counter-sora-text'>Experiences(Year)</div>
 </div>
 <div class='counter-box-item'>
 <i class='color lnr lnr-gift'/>
-<h1 class='counter-sora'>1234</h1>
+<h1 class='counter-sora'>5</h1>
 <div class='counter-sora-text'>Awards</div>
 </div>
 </div>
@@ -5498,21 +5504,21 @@ width: 100%;
 <div class='main-gallery wow fadeInRight' id='section-5' style='visibility: visible;'>
   <div class='gallery-cell'>
     <div class='testimonial'>
-        <img class='testimonial-avatar' src='http://1.bp.blogspot.com/-zjRQwZusQuA/WaUu4AM9p_I/AAAAAAAADug/68l5-04iSWoVMAkpi8iQGM430fUYKAzdACK4BGAYYCw/s400/128.jpg'/>
+        <img class='testimonial-avatar' src='https://i.ibb.co/JwvbwRTC/client.jpg'/>
       <q class='testimonial-quote'>&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.&quot;</q>
       <span class='testimonial-author'>Joe Smith, CEO of Cubix</span>
     </div>
   </div>
   <div class='gallery-cell'>
      <div class='testimonial'>
-        <img class='testimonial-avatar' src='http://4.bp.blogspot.com/-B1N0s6e1Y90/WaUvFDHMc7I/AAAAAAAADuo/5L4qayXHNiAWVAgZhTRhJ7S2VSAL-E-3QCK4BGAYYCw/s400/128%2B%25281%2529.jpg'/>
+        <img class='testimonial-avatar' src='https://i.ibb.co/JwvbwRTC/client.jpg'/>
       <q class='testimonial-quote'>&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.&quot;</q>
       <span class='testimonial-author'>Lisa Jones, Freelance Web Developer</span>
     </div>
   </div>
   <div class='gallery-cell'>
         <div class='testimonial'>
-        <img class='testimonial-avatar' src='http://1.bp.blogspot.com/--AljITWu1is/WaUvSgSDbEI/AAAAAAAADuw/5FZ7WobSdtAVINLVQT3qpCSktRNlDA23gCK4BGAYYCw/s400/128.jpg'/>
+        <img class='testimonial-avatar' src='https://i.ibb.co/JwvbwRTC/client.jpg'/>
       <q class='testimonial-quote'>&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.&quot;</q>
       <span class='testimonial-author'>Ryan Waltz, Front-End Developer</span>
     </div>
