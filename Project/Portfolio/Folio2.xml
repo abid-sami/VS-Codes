@@ -3653,7 +3653,7 @@ var pagenav_next = "Next";
 <div class='scroll-head-wrap row'>
 <div class='scrollin-logo'>
   <b:section class='header' id='header' maxwidgets='1' name='Logo &amp; Title' showaddelement='no'>
-    <b:widget id='Header1' locked='true' title='Ragib Hasan (Header)' type='Header' version='1'>
+    <b:widget id='Header1' locked='true' title='Ragib Hasan Abid Sami (Header)' type='Header' version='1'>
       <b:widget-settings>
         <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEhFPItREYd9-t1uHM6ElilERfBRic9oRv5Pj_WPy22A-F_qDEmSzIdJuTftvWvXbwvb_J_hj0Y3LppQ3YW8PcnG3-ykNeSRPlDJiaa4iOl6UYhUmLZoGJi-x8oQ-bewMO4Cn2NqVwF4noxRPxRh2SiA4yP7oTSQTytJZJ8NjF3Y4ZfNu_QLle7r1X8szpA=s480</b:widget-setting>
         <b:widget-setting name='displayHeight'>60</b:widget-setting>
@@ -4064,8 +4064,8 @@ Hi, I am MD Ragib Hasan Abid Sami, a Computer Science and Engineering student at
  <i aria-hidden='true' class='fa fa-birthday-cake'/>
 </span>
 <span class='special-content'>
-  <h6 class='special-heading'>App Development</h6>
-<p class='special-text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s. </p></span>
+  <h6 class='special-heading'>Graphics Design</h6>
+<p class='special-text'>We create modern and eye-catching graphics that match your brand. From logos to banners, our designs help you stand out and engage your audience. </p></span>
   </div>
 </div>
 <!-- Second Ends -->
