@@ -9,4 +9,4 @@ problem and ambiguity in accessing deviceName.  */
 #include <iostream>
 using namespace std;
 
-
+class 
