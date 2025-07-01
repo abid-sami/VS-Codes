@@ -16,5 +16,4 @@ int main(){
     catch(int e){
         cout<<"Can't be divided by "<<e<<endl;
     }
-    
 }
