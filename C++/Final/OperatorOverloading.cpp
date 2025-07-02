@@ -1,3 +1,9 @@
+/* Write a C++ program that overloads the function findMax() to:
+Return the maximum of two integers.
+Return the maximum of two floats.
+Return the maximum of three integers.
+Demonstrate the function calls in the main() function.*/
+
 #include<iostream>
 using namespace std;
 
