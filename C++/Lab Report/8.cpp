@@ -3,9 +3,3 @@ Include member functions to get and set values, and display the pair.*/
 
 #include <iostream>
 using namespace std;
-
-template <typename T1, typename T2>
-class Pair {
-private:
-    T1 first;
-    T2 second;
