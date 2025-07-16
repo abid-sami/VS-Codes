@@ -176,3 +176,4 @@ add_shortcode('author_product_dashboard', function () {
 
     return ob_get_clean();
 });
+
