@@ -2,8 +2,8 @@
 /**
  * Plugin Name: Author Product Seller
  * Description: Allow author users to sell WooCommerce products with extra fields and frontend dashboard.
- * Version: 1.0
- * Author: ChatGPT for Sami
+ * Version: 1.1
+ * Author: Ragib Hasan Abid Sami
  */
 
 // Register custom fields
@@ -49,12 +49,15 @@ add_action('woocommerce_single_product_summary', function () {
     $seller_name = get_post_meta($post->ID, '_seller_name', true);
     $condition = get_post_meta(get_the_ID(), '_product_condition', true);
 
-    echo "<div style='margin-top:20px;font-color:'><h2>Seller Info:</h2>";
-    echo "<p><strong>Nickname:</strong> " . esc_html($seller_name) . "</p>";
-    echo "<p><strong>Contact:</strong> $contact</p>";
-    echo "<p><strong>Semester:</strong> $semester</p>";
-    echo "<p><strong>Varsity:</strong> $varsity</p>";
-    echo "<p><strong>Facebook:</strong> <a href='$facebook' target='_blank'>$facebook</a></p>";
+    // Product details
+    echo '<br><div style="margin-bottom:8px; color:#E60E0E;"><strong>' . esc_html($condition ? $condition : 'N/A') . '</strong></div>';
+
+    echo "<div style='margin-top:20px;'><h2 style='color:#bd5219;'>Seller Info:</h2>";
+    echo "<p><strong>👤 Nickname:</strong> " . esc_html($seller_name) . "</p>";
+    echo "<p><strong>📞 Contact:</strong> $contact</p>";
+    echo "<p><strong>🗓️ Semester:</strong> $semester</p>";
+    echo "<p><strong>🏫 Varsity:</strong> $varsity</p>";
+    echo "<p><strong>🔗 Facebook:</strong> <a href='$facebook' target='_blank'>$facebook</a></p>";
     // Add Call Now and Message Now buttons
     echo "<div style='margin-top:14px;'>";
     if ($contact) {
@@ -240,13 +243,12 @@ add_shortcode('author_product_dashboard', function () {
         $img = get_the_post_thumbnail(get_the_ID(), 'thumbnail', ['style' => 'max-width:200px; border-radius:8px; margin-bottom:8px;']);
         echo '<li>';
         // Product image
-        if ($img) echo $img;
+        if ($img) echo '<a href="' . get_permalink() . '">' . $img . '</a>';
         // Product name
         echo '<span class="product-title">' . get_the_title() . '</span>';
         // Product price
         echo '<div style="font-size:1.1em; color:#E60E0E; margin-bottom:8px;">Price: ' . ($price ? wc_price($price) : 'N/A') . '</div>';
-        // Product details
-        echo '<div style="margin-bottom:8px;">Condition: <strong>' . esc_html($condition ? $condition : 'N/A') . '</strong></div>';
+
         // Buttons
         echo '<div class="button-group">';
         echo '<a href="' . get_permalink() . '" class="button">View</a>';

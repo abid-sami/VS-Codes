@@ -1,4 +1,7 @@
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args){
         //Output
@@ -18,8 +21,33 @@ public class Main {
         System.out.println(name.substring(1, 3));
 
         //Array
-        int [] marks = {10, 20, 30};
+        int [] marks = {20, 10, 30};
         System.out.println(marks[0]);
+
+        //Array Length
+        System.out.println(marks.length);
+
+        //Array Sort (Also needs import java.util.Arrays;)
+        Arrays.sort(marks);
+        System.out.println(marks[0]);
+
+        //2D Array
+        int [][] arr = {{1, 2, 3}, {4, 5, 6}};
+        System.out.println(arr[0][1]); 
+
+        //Minimum, Maximum
+        System.out.println(Math.min(10, 20));
+
+        //Random
+        System.out.println((int)(Math.random()*100));
+
+
+        //Input
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter name: ");
+        String yname= sc.nextLine();
+        System.out.println(yname);
+
     }
     
 }
