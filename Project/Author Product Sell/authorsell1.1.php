@@ -13,16 +13,22 @@ add_action('add_meta_boxes', function () {
 
 function custom_product_fields_callback($post) {
     $seller_name = get_post_meta(get_the_ID(), '_seller_name', true);
+    $condition = get_post_meta(get_the_ID(), '_product_condition', true);
     $contact = get_post_meta($post->ID, '_contact_number', true);
     $semester = get_post_meta($post->ID, '_semester_number', true);
     $facebook = get_post_meta($post->ID, '_facebook_id', true);
     $varsity = get_post_meta($post->ID, '_varsity_name', true);
     $varsities = get_option('varsity_options', []);
 
+    echo '<label>Seller Nickname: </label><input type="text" name="seller_name" value="' . esc_attr($seller_name) . '" /><br><br>';
+    echo '<label>Product Condition: </label><select name="product_condition">';
+    echo '<option value="">Select Condition</option>';
+    echo '<option value="Used"' . selected($condition, 'Used', false) . '>Used</option>';
+    echo '<option value="New"' . selected($condition, 'New', false) . '>New</option>';
+    echo '</select><br><br>';
     echo '<label>Contact Number: </label><input type="text" name="contact_number" value="' . esc_attr($contact) . '" /><br><br>';
     echo '<label>Semester Number: </label><input type="text" name="semester_number" value="' . esc_attr($semester) . '" /><br><br>';
     echo '<label>Facebook ID Link: </label><input type="url" name="facebook_id" value="' . esc_attr($facebook) . '" /><br><br>';
-
     echo '<label>Varsity Name: </label><select name="varsity_name">';
     foreach ($varsities as $v) {
         $selected = $varsity == $v ? 'selected' : '';
@@ -33,6 +39,8 @@ function custom_product_fields_callback($post) {
 
 // Save custom fields
 add_action('save_post', function ($post_id) {
+    if (isset($_POST['seller_name'])) update_post_meta($post_id, '_seller_name', sanitize_text_field($_POST['seller_name']));
+    if (isset($_POST['product_condition'])) update_post_meta($post_id, '_product_condition', sanitize_text_field($_POST['product_condition']));
     if (isset($_POST['contact_number'])) update_post_meta($post_id, '_contact_number', sanitize_text_field($_POST['contact_number']));
     if (isset($_POST['semester_number'])) update_post_meta($post_id, '_semester_number', sanitize_text_field($_POST['semester_number']));
     if (isset($_POST['facebook_id'])) update_post_meta($post_id, '_facebook_id', esc_url_raw($_POST['facebook_id']));
@@ -188,6 +196,13 @@ add_shortcode('author_product_dashboard', function () {
         echo '<label for="product_name"><strong>Product Name:</strong></label>';
         echo '<input type="text" id="product_name" name="product_name" value="' . esc_attr($name) . '" placeholder="C++ Book" required>';
         echo '<label for="product_price"><strong>Product Price: (BDT)</strong></label>';
+        echo '</select>';
+        echo '<label for="product_condition"><strong>Product Condition:</strong></label>';
+        echo '<select id="product_condition" name="product_condition" required>';
+        echo '<option value="">Select Condition</option>';
+        echo '<option value="Used"' . (get_post_meta($edit_id, '_product_condition', true) == 'Used' ? ' selected' : '') . '>Used</option>';
+        echo '<option value="New"' . (get_post_meta($edit_id, '_product_condition', true) == 'New' ? ' selected' : '') . '>New</option>';
+        echo '</select>';
         echo '<input type="number" step="0.01" min="0" id="product_price" name="product_price" value="' . esc_attr(get_post_meta($edit_id, '_price', true)) . '" placeholder="999" required>';
         echo '<label for="product_details"><strong>Product Details:</strong></label>';
         echo '<textarea id="product_details" name="product_details" placeholder="Details" required>' . esc_textarea($desc) . '</textarea>';
@@ -217,13 +232,6 @@ add_shortcode('author_product_dashboard', function () {
             $sel = $v == $varsity ? 'selected' : '';
             echo "<option value='" . esc_attr($v) . "' $sel>" . esc_html($v) . "</option>";
         }
-        echo '</select>';
-        echo '<label for="product_condition"><strong>Product Condition:</strong></label>';
-        echo '<select id="product_condition" name="product_condition" required>';
-        echo '<option value="">Select Condition</option>';
-        echo '<option value="Used"' . (get_post_meta($edit_id, '_product_condition', true) == 'Used' ? ' selected' : '') . '>Used</option>';
-        echo '<option value="New"' . (get_post_meta($edit_id, '_product_condition', true) == 'New' ? ' selected' : '') . '>New</option>';
-        echo '</select>';
         echo '<button type="submit" name="save_product">Submit</button>';
         echo '</form></div><hr>';
     }
