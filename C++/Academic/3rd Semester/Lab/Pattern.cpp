@@ -1,4 +1,4 @@
-//Pattern
+//Pyramid Pattern print
 
 #include<iostream>
 using namespace std;
@@ -6,6 +6,7 @@ using namespace std;
 int main()
 {
     int a;
+    cout<<"Enter the number of rows: ";
     cin>>a;
     for(int i=1; i<=a; i++)
     {
