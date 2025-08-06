@@ -3,24 +3,6 @@
 #include<iostream>
 using namespace std;
 
-int search(int a[], int n, int data){
-    int l, r, mid;
-    l=0;
-    r=n-1;
-    while(l<=r){
-        mid=(l+r/2);
-        if(data==a[mid])
-        return mid;
-        else if(data>a[mid]){
-            l=mid+1;
-        }
-        else{
-            r=mid-1;
-        }
-        return -1;
-    }
-}
-
 int main(){
     int n;
     cout<<"Enter array Index: "<<endl;
@@ -34,11 +16,24 @@ int main(){
     cout<<"Enter Search Number: "<<endl;
     cin>>s;
 
-    int result=search(arr, n, s);
-    if (result!=-1){
-        cout<<"Element found at index: "<<result<< endl;
-    } 
-    else{
+    int l=0, r=n-1, m; 
+    bool found=0;
+    while(l<=r){
+        m=(l+r)/2;
+        if(arr[m]==s){
+            cout<<"Found at: "<<m<<endl;
+            found=1;
+            break;
+        }
+        else if(arr[m]<s){
+            l=m+1;
+        }
+        else{
+            r=m-1;
+        }
+    }
+    
+    if(!found){
         cout<<"Element not found"<<endl;
     }
 
