@@ -1,4 +1,5 @@
 //Create a new array where each element at index i is the sum of elements from 0 to i in the original array
+
 #include<iostream>
 using namespace std;
 
