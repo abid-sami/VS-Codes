@@ -1,4 +1,4 @@
-//Find the largest number from 3 numbers
+//Write a C/C++ program that find the largest number among the three numbers.
 
 #include<iostream>
 using namespace std;

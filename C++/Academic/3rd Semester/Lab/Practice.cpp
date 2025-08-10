@@ -2,15 +2,28 @@
 using namespace std;
 
 int main(){
-    int r;
-    cin>>r;
-    for(int i=1; i<=r; i++){
-        for(int j=1; j<=r-i; j++){
-            cout<<" ";
+    int n;
+    cout<<"Enter amount of array: "<<endl;
+    cin>>n;
+    int arr[n];
+    for(int i=0; i<n; i++){
+        cin>>arr[i];
+    }
+    int s;
+    cout<<"Enter search value: "<<endl;
+    cin>>s;
+
+    int l=0, r=n-1, m;
+    bool found=0;
+    while(l<=r){
+        m=(l+r)/2;
+        if(arr[m]==s){
+            cout<<"Found at index: "<<m<<endl;
+            found=1;
+            break;
         }
-        for(int k=1; k<=2*i-1; k++){
-            cout<<"*";
+        else if(arr[m]){
+            
         }
-        cout<<endl;
     }
 }

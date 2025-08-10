@@ -1,4 +1,4 @@
-//Pyramid Pattern print
+//Write a Program to create a pyramid pattern using C/C++.
 
 #include<iostream>
 using namespace std;
