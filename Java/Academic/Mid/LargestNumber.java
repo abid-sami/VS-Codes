@@ -15,14 +15,16 @@ public class LargestNumber {
             if(a>=c){
                 System.out.println("A is the Largest number");
             }
-        }
-        else if(b>=a){
+            else{
+                System.out.println("C is the Largest number");
+            }
             if(b>=c){
                 System.out.println("B is the Largest number");
             }
-        }
-        else{
+            else{
                 System.out.println("C is the Largest number");
             }
+        }
+        
     }
 }

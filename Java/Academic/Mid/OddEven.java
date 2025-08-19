@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 public class OddEven {
     public static void main(String[] args){
-        Scanner input=new Scanner(System.in);
+        Scanner in=new Scanner(System.in);
         System.out.println("Enter Number: ");
-        int a=input.nextInt();
+        int a=in.nextInt();
         if(a%2==0){
             System.out.println("Even Number");
         }
