@@ -1,3 +1,5 @@
+//CT1 Solve
+
 import java.util.Scanner;
 
 public class CT1 {
