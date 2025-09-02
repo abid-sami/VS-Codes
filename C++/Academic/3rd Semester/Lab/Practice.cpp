@@ -3,27 +3,29 @@ using namespace std;
 
 int main(){
     int n;
-    cout<<"Enter amount of array: "<<endl;
-    cin>>n;
-    int arr[n];
-    for(int i=0; i<n; i++){
-        cin>>arr[i];
-    }
-    int s;
-    cout<<"Enter search value: "<<endl;
-    cin>>s;
+    cout << "Enter array size: ";
+    cin >> n;
 
-    int l=0, r=n-1, m;
-    bool found=0;
-    while(l<=r){
-        m=(l+r)/2;
-        if(arr[m]==s){
-            cout<<"Found at index: "<<m<<endl;
-            found=1;
-            break;
-        }
-        else if(arr[m]){
-            
-        }
+    int arr[n+1]; // +1 for new element
+    cout << "Enter array elements: ";
+    for(int i=0; i<n; i++){
+        cin >> arr[i];
     }
+
+    int in, pos;
+    cout << "Enter number to insert: ";
+    cin >> in;
+    cout << "Enter position (0 to " << n << "): ";
+    cin >> pos;
+
+    for(int i=n; i>pos; i--){
+        arr[i] = arr[i-1];
+    }
+    arr[pos] = in;
+
+    cout << "Result: " << endl;
+    for(int i=0; i<=n; i++){
+        cout << arr[i] << " ";
+    }
+    cout << endl;
 }
