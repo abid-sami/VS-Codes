@@ -18,7 +18,7 @@ int main(){
     while(l<=r){
         m=(l+r)/2;
         if(arr[m]==s){
-            cout<<"Student ID Found at position: "<<m<<endl;
+    cout<<"Student ID Found at position: "<<m<<endl;
             found=1;
             break;
         }
