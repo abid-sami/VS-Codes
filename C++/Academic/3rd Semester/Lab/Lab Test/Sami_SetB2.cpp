@@ -46,20 +46,20 @@ int main() {
     cout<<"Enter number of books: ";
     cin>>n;
     if(n>0){
-        cout<<"Enter the books IDs: " << endl;
+cout<<"Enter the books IDs: " << endl;
         for(int i=0; i<n; i++) {
             cin>>id;
             head=InsertBook(head, id);
         }
     }
-    cout<<"Before adding new books:" <<endl;
+cout<<"Before adding new books:" <<endl;
     display(head);
 
     cout<<"New arrivals: ";
     cin>>nn;
 
     if(nn>0){
-        cout<<"Enter the new book IDs: "<<endl;
+cout<<"Enter the new book IDs: "<<endl;
         for(int i = 0; i<nn; i++) {
             cin>>id;
             head=InsertBook(head, id);
@@ -67,5 +67,5 @@ int main() {
     }
     cout<<"After insertion:" <<endl;
     display(head);
-    cout<<"Total number of books: "<<countBooks(head)<<endl;
+cout<<"Total books: "<<countBooks(head);
 }
