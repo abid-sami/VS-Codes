@@ -3,6 +3,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "Coding_1a167743"
+    },
+    {
+      "type": "java",
+      "name": "CT1",
+      "request": "launch",
+      "mainClass": "CT1",
+      "projectName": "Coding_1a167743"
+    },
+    {
+      "type": "java",
+      "name": "GradeCalculator",
+      "request": "launch",
+      "mainClass": "GradeCalculator",
+      "projectName": "Coding_1a167743"
+    },
+    {
+      "type": "java",
+      "name": "GradeCalculator",
+      "request": "launch",
+      "mainClass": "Java.Academic.Mid.GradeCalculator",
+      "projectName": "Coding_1a167743"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Java.Academic.Final.Exception.Main",
+      "projectName": "Coding_1a167743"
+    },
+    {
+      "type": "java",
+      "name": "Main8",
+      "request": "launch",
+      "mainClass": "Java.Academic.Final.Exception.Main8",
+      "projectName": "Coding_1a167743"
+    },
+    {
+      "type": "java",
+      "name": "TicTacToeDeluxeSound",
+      "request": "launch",
+      "mainClass": "TicTacToeDeluxeSound",
+      "projectName": "Coding_1a167743"
+    },
+    {
+      "type": "java",
       "name": "Calculator",
       "request": "launch",
       "mainClass": "Calculator",

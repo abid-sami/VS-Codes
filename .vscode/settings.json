@@ -125,5 +125,6 @@
     "thread": "cpp",
     "typeindex": "cpp",
     "typeinfo": "cpp"
-  }
+  },
+  "java.debug.settings.onBuildFailureProceed": true
 }
